@@ -1,7 +1,11 @@
-# Streamlit Component template in Vue.js
+# Streamlit Component template in Vue.js with Vuetify.js
+
+Extension of the original [Streamlit Vue.js Component template](https://github.com/andfanilo/streamlit-component-template-vue/tree/vue2)
 
 Vue 2 template to build a Streamlit component. Uses Vue.js scoped slot to send parameters from Streamlit Python script into `args` props of your component.
+Uses Vuetify 2 - a Vue UI Library with beautifully handcrafted Material Components.
 
+Note: A Vue 3 version does not exist yet, because there is no official Vuetify 3 released.
 ## Setup
 
 [Copy paste](https://github.com/streamlit/component-template#quickstart) of the original component-template quickstart.
