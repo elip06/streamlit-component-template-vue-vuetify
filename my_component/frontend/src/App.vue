@@ -4,11 +4,11 @@
   You should not have to edit this, but are free to do so :)
 -->
 <template>
-  <div id="app">
+  <v-app id="app">
     <WithStreamlitConnection v-slot="{ args }">
       <MyComponent :args="args" />
     </WithStreamlitConnection>
-  </div>
+  </v-app>
 </template>
 
 <script>
@@ -28,12 +28,9 @@ export default {
 </script>
 
 <style>
-body {
-  margin: 0;
-}
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;

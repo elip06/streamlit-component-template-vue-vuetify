@@ -1,16 +1,22 @@
 <template>
-  <div class="wrapper">
+  <v-main class="wrapper">
     <!-- 
       Show a button and some text.
       When the button is clicked, we'll increment our "numClicks" state
       variable, and send its new value back to Streamlit, where it'll
       be available to the Python program.
     -->
-    <span>
-      Hello, {{args.name}}! &nbsp;
-      <button v-on:click="onClicked()">Click Me!</button>
-    </span>
-  </div>
+    <v-card class="ml-2 mt-1" max-width="344">
+      <v-card-title>Hello, {{args.name}}!</v-card-title>
+      <v-card-subtitle>This component has a title and a button</v-card-subtitle>
+      <v-card-actions>
+        <v-spacer></v-spacer>
+        <v-btn small primary @click="onClicked()">
+          Click Me!
+        </v-btn>
+      </v-card-actions>
+    </v-card>
+  </v-main>
 </template>
 
 <script>
